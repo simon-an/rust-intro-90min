@@ -1,0 +1,60 @@
+[package]
+edition = "2021"
+name = "rust-into-90min"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+  ".",
+  "benches-example",
+  "temp/examples/tokio-examples",
+  "rust-examples",
+]
+
+[workspace.dependencies]
+anyhow = "1.0"
+async-stream = "0.3"
+async-trait = "0.1"
+backoff = {version = "0.4", features = ["tokio"]}
+base64 = "0.21"
+chrono = "0.4"
+clap = "4.2"
+config = "0.13"
+criterion = {version = "0.4", features = ["async_tokio"]}
+criterion_bencher_compat = "0.4"
+env_logger = "0.10"
+error-chain = "0.12"
+futures = "0.3"
+futures-core = "0.3"
+futures-util = "0.3"
+lazy_static = "1.4"
+log = "0.4"
+mockall = "0.11"
+mockito = "1"
+pretty_assertions = "1"
+regex = "1"
+reqwest = "0.11"
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1"
+thiserror = "1"
+tokio = {version = "1", features = ["macros", "rt-multi-thread"]}
+tokio-stream = {version = "0.1"}
+tokio-test = "0.4"
+uuid = "1"
+
+# pdf-extract = { version = "0.6", optional = false }
+# lopdf = { version = "0.29", optional = false } # must be keept in sync with pdf-extract
+# image = { version = "0.24", optional = false }
+# actix = {version = "0.13"}
+# actix-broker = {version = "0.4"}
+# actix-rt = "2.6"mockito = "1.0"
+
+[dev-dependencies]
+async-stream = {workspace = true}
+futures = {workspace = true}
+futures-core = {workspace = true}
+futures-util = {workspace = true}
+thiserror = {workspace = true}
+tokio = {workspace = true}

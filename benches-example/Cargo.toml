@@ -1,0 +1,19 @@
+[package]
+edition = "2021"
+name = "benches-example"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+criterion = {workspace = true}
+criterion_bencher_compat = {workspace = true}
+tokio = {workspace = true, features = ["full"]}
+
+[[bench]]
+name = "fib"
+harness = false
+
+[[bench]]
+name = "foo"
+harness = false

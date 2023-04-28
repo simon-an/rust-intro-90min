@@ -1,6 +1,9 @@
 # rust-into-90min
 
-https://www.rust-lang.org/learn
+ - https://www.rust-lang.org/learn
+ - https://rust-lang-nursery.github.io/rust-cookbook/
+ - https://doc.rust-lang.org/book/index.html
+ - https://github.com/rust-lang/rustlings
 
 155min: https://www.youtube.com/watch?v=ygL_xcavzQ4
 
@@ -15,14 +18,24 @@ https://www.rust-lang.org/learn
 
 ## .vscode folder
 
+## benches with criterion (haskel port)
+
+```zsh
+cargo bench --package benches-example
+```
+
 
 ## repo - workspace, binary, library, modules
 
 - 
-
 ## hello world
 
 - https://doc.rust-lang.org/std/index.html
 
-## Traits
+## Basics
+
+```
+cargo run --package rust-examples --example 11-trait --release
+
+```
 
