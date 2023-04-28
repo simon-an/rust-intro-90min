@@ -9,8 +9,10 @@ version = "0.1.0"
 members = [
   ".",
   "benches-example",
-  "temp/examples/tokio-examples",
+  # "temp/examples/tokio-examples",
   "rust-examples",
+  "lib",
+  "cli",
 ]
 
 [workspace.dependencies]

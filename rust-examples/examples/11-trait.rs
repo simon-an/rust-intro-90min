@@ -1,6 +1,6 @@
 fn main() {
     
-    trait Foo {
+    trait Foo: Send + Sync {
         fn foo(&self);
     }
 
