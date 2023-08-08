@@ -27,3 +27,6 @@ Cargo.lock
 
 # added for this repo:
 /temp
+
+public/
+book/

@@ -1,3 +1,7 @@
+# How to use Enums
+
+
+```rust,editable
 fn main() {
     pub struct Animal {
         pub name: String,
@@ -64,3 +68,6 @@ fn main() {
 
     println!("legs: {}", legs);
 }
+
+
+```
