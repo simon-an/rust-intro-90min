@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="landing.html" class="active"><strong aria-hidden="true">1.</strong> Into</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">2.</strong> PrintVariable</a></li><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">3.</strong> Functions</a></li><li class="chapter-item expanded "><a href="types.html"><strong aria-hidden="true">4.</strong> Traits</a></li><li class="chapter-item expanded "><a href="struct1.html"><strong aria-hidden="true">5.</strong> Structs</a></li><li class="chapter-item expanded "><a href="struct2-macros.html"><strong aria-hidden="true">6.</strong> Derive Macros</a></li><li class="chapter-item expanded "><a href="struct3-print.html"><strong aria-hidden="true">7.</strong> PrintStructs</a></li><li class="chapter-item expanded "><a href="struct4-impl.html"><strong aria-hidden="true">8.</strong> Struct Impl</a></li><li class="chapter-item expanded "><a href="types3.html"><strong aria-hidden="true">9.</strong> Enums</a></li><li class="chapter-item expanded "><a href="use-enums.html"><strong aria-hidden="true">10.</strong> Use Enums</a></li><li class="chapter-item expanded "><a href="end-resources.html"><strong aria-hidden="true">11.</strong> End</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="landing.html" class="active"><strong aria-hidden="true">1.</strong> Into</a></li><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">2.</strong> PrintVariable</a></li><li class="chapter-item expanded "><a href="primitives.html"><strong aria-hidden="true">3.</strong> Primitives</a></li><li class="chapter-item expanded "><a href="mutable.html"><strong aria-hidden="true">4.</strong> Immutable/Mutable</a></li><li class="chapter-item expanded "><a href="scope.html"><strong aria-hidden="true">5.</strong> Scope</a></li><li class="chapter-item expanded "><a href="functions.html"><strong aria-hidden="true">6.</strong> Functions</a></li><li class="chapter-item expanded "><a href="move.html"><strong aria-hidden="true">7.</strong> Ref,Owned,Move</a></li><li class="chapter-item expanded "><a href="result.html"><strong aria-hidden="true">8.</strong> Result,Option</a></li><li class="chapter-item expanded "><a href="struct1.html"><strong aria-hidden="true">9.</strong> Structs</a></li><li class="chapter-item expanded "><a href="types-trait.html"><strong aria-hidden="true">10.</strong> Traits</a></li><li class="chapter-item expanded "><a href="struct2-macros.html"><strong aria-hidden="true">11.</strong> Derive Macros</a></li><li class="chapter-item expanded "><a href="struct3-print.html"><strong aria-hidden="true">12.</strong> PrintStructs</a></li><li class="chapter-item expanded "><a href="struct4-impl.html"><strong aria-hidden="true">13.</strong> Struct Impl</a></li><li class="chapter-item expanded "><a href="types3.html"><strong aria-hidden="true">14.</strong> Enums</a></li><li class="chapter-item expanded "><a href="use-enums.html"><strong aria-hidden="true">15.</strong> Use Enums</a></li><li class="chapter-item expanded "><a href="end-reco.html"><strong aria-hidden="true">16.</strong> Opinion</a></li><li class="chapter-item expanded "><a href="end-resources.html"><strong aria-hidden="true">17.</strong> End</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,33 +166,27 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="hello-world"><a class="header" href="#hello-world">Hello World</a></h1>
-<pre><pre class="playground"><code class="language-rust">fn main() {
-    println!(&quot;hello rustaceans 🦀!&quot;);
-}</code></pre></pre>
-<h1 id="goals"><a class="header" href="#goals">Goals:</a></h1>
-<ul>
-<li>KISS - Keep it stupid simple</li>
-<li>Syntax, Semantics</li>
-<li>Hands-On</li>
-</ul>
-<h1 id="agenda"><a class="header" href="#agenda">Agenda</a></h1>
+                        <h1 id="agenda"><a class="header" href="#agenda">Agenda</a></h1>
 <ol>
-<li>short intro</li>
-<li>start coding</li>
+<li>Intro of languages features</li>
+<li>Start coding today
+<ul>
+<li>cargo</li>
+<li>modules</li>
+<li>clap</li>
+<li>...</li>
+</ul>
+</li>
 <li>Afterwards: Keep coding.</li>
 </ol>
-<h1 id="simons-recommendations"><a class="header" href="#simons-recommendations">Simon's Recommendations</a></h1>
-<ol>
-<li>Use clone,ref,as_ref to mute the borrow checker</li>
-<li>Avoid Box, Cell, RefCell, Arc, Mutex, etc</li>
-<li>Avoid Generics in the beginning</li>
-<li>Avoid writing your own macros</li>
-<li>Aim for understanding async and multithreading, channels soon (very valuable) -&gt; Next Session</li>
-<li>Now you need Arc and maybe Mutex</li>
-<li>Build a small real application (cli tool, website, Client App)</li>
-<li>Forget about OOD. Rust is all about procedural programming with a strong typesystem. https://doc.rust-lang.org/book/ch17-00-oop.html</li>
-</ol>
+<h1 id="goals"><a class="header" href="#goals">Goals:</a></h1>
+<ul>
+<li>KISS / Step by Step</li>
+<li>Focus: Syntax, Semantics</li>
+<li>Hands-On</li>
+<li>Main Challange for Devs coming from other languages: Forget what you already know.</li>
+</ul>
+<h1 id="multiple-paradigmas"><a class="header" href="#multiple-paradigmas">Multiple Paradigmas:</a></h1>
 <p>Rust supports a mixture of imperative procedural, concurrent actor, object-oriented and pure functional styles. It also supports generic programming and metaprogramming, in both static and dynamic styles.</p>
 
                     </main>
