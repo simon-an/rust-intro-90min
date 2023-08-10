@@ -1,10 +1,6 @@
-# Typesystem
-1. ~~Trait~~
-2. Struct
-3. Enum
+# Typesystem - Struct 
 
 ```rust
-#[derive(Debug)]
 pub struct Animal{
     pub name: String,
     legs: u32,

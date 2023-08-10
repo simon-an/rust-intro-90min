@@ -1,4 +1,4 @@
-# Chapter 1
+# main() and exit codes
 
 ```rust,editable
 fn main() {

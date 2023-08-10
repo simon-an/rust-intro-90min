@@ -1,7 +1,4 @@
-# Typesystem
-1. ~~Trait~~
-2. Struct
-3. Enum
+# Typesystem Struct
 
 ```rust
 # fn main() {

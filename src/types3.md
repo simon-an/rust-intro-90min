@@ -1,7 +1,4 @@
-# Typesystem
-1. ~~Trait~~
-2. ~~Struct~~
-3. Enum
+# Typesystem - Enums
 
 ```rust
 # fn main() {
@@ -16,9 +13,9 @@
 # }
 pub enum AnimalType{
     Chicken(Animal),
-    Dog(Animal),
+    Dog(Dog),
     Other(String),
-    BadTypesystemUse((String, String, u32, String, String)),
+    BadTypesystemUse(String, String, u32, String, String),
 }
 # }
 ```
