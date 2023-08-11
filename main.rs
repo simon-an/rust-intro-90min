@@ -1,19 +1,20 @@
 fn main() {
-    let x = parse("5");
-    println!("x is {}", x);
-
-    let res = try_parse("5");
-    match res {
-        Ok(x) => println!("x is {}", x),
-        Err(e) => println!("Error: {}", e),
+    let mut number = 5;
+    { // BLOCK
+        let number = 8;
     }
-}
+    println!("{number}");
 
-fn parse(thing: &str) -> u32 {
-    return thing.parse().expect("Not a number");
-}
-fn try_parse(thing: &str) -> Result<u32, &str> {
-    // 'turbofish': ::<>
-    let val: Result<u32, std::num::ParseIntError> = thing.parse::<u32>();
-    val.map_err(|_e| "Not a number")
+    let _new_number  = increment(5);
+    
+    let incrementor = |x: i32| -> i32 {
+        x + 1
+    };
+    let new_number  = incrementor(5);
+
+    println!("{new_number}");
+} 
+
+fn increment (x: i32) -> i32 {
+    x + 1
 }
