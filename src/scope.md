@@ -7,17 +7,18 @@ fn main() {
         let number = 8;
     }
     println!("{number}");
-} 
-```
 
-<!-- ```rust,editable
-fn main() {
-    let mut number = 5;
-    let mut x = move || { // LAMBDA
-        number = 8+number;
-        println!("{number}");
+    let _new_number  = increment(5);
+    
+    let incrementor = |x: i32| -> i32 {
+        x + 1
     };
-    x();
-    println!("{number}");
+    let new_number  = incrementor(5);
+
+    println!("{new_number}");
+} 
+
+fn increment (x: i32) -> i32 {
+    x + 1
 }
-``` -->
+```

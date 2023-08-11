@@ -1,7 +1,8 @@
 # Summary
 
 - [Into](./landing.md)
-- [PrintVariable](./chapter_1.md)
+- [main fn](./chapter_1.md)
+- [print](./printfn.md)
 - [Primitives](./primitives.md)
 - [Immutable/Mutable](./mutable.md)
 - [Scope](./scope.md)
